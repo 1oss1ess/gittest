@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>home</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Home</h1>
+        <h3>{{ name }}</h3>
+        {% for arr in array %}
+            <ul>
+                <li>{{ arr }}</li>
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock %}
